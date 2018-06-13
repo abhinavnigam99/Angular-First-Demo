@@ -5,6 +5,8 @@ eventsApp.controller('EventController',
         $scope.snippet='<span style="color:red">Hi There<span>';
         $scope.myStyle = {color:'red'};
         $scope.myClass = "blue";
+        $scope.sortOrder = "-upVoteCount"
+        $scope.btnDisabled = true;
         $scope.boolValue = true;
         $scope.event = {
             name: 'Abhinav Nigam',
@@ -20,7 +22,7 @@ eventsApp.controller('EventController',
                 {
                     name: 'Session 1',
                     cretaor: 'Name 1',
-                    duration: '1',
+                    duration: 1,
                     level: '1',
                     abstract: 'Beginner',
                     upVoteCount: 0
@@ -28,7 +30,7 @@ eventsApp.controller('EventController',
                 {
                     name: 'Session 2',
                     cretaor: 'Name 2',
-                    duration: '2',
+                    duration: 2,
                     level: '2',
                     abstract: 'Intermediate',
                     upVoteCount: 0
@@ -36,7 +38,7 @@ eventsApp.controller('EventController',
                 {
                     name: 'Session 3',
                     cretaor: 'Name 3',
-                    duration: '3',
+                    duration: 3,
                     level: '3',
                     abstract: 'Advanced',
                     upVoteCount: 0
